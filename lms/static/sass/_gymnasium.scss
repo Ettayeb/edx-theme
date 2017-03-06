@@ -299,6 +299,7 @@ $register-banner-image: none;
 }
 
 /* individual page styles */
+@import 'urls';
 @import 'about';
 @import 'account_settings';
 @import 'assessment';
