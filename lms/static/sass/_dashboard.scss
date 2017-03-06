@@ -1,6 +1,6 @@
 section.container.dashboard
 {
-	background-color:$gym-white;
+	background-color:$cdcp-white;
 }
 
 #main.content-wrapper
@@ -55,7 +55,7 @@ section.container.dashboard
 			h1
 			{
 				font: 900 1.8em/1.2 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
-		    color: $gym-dark-gray;
+		    color: $cdcp-dark-gray;
 		    letter-spacing: .02em;
 		    word-spacing: .02em;
 		    text-transform: uppercase;
@@ -76,7 +76,7 @@ section.container.dashboard
 			h1
 			{
 				font: 900 1.8em/1.2 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
-		    color: $gym-dark-gray;
+		    color: $cdcp-dark-gray;
 		    letter-spacing: .02em;
 		    word-spacing: .02em;
 		    text-transform: uppercase;
@@ -104,7 +104,7 @@ section.container.dashboard
 			h2
 			{
 				font: 900 1em/1.3 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
-				color: $gym-dark-gray;
+				color: $cdcp-dark-gray;
 				letter-spacing: .06em;
 				word-spacing: .04em;
 				text-transform: uppercase;
@@ -150,7 +150,7 @@ section.container.dashboard
 				{
 					width: 6.77966%;
 			    display: inline-block;
-			    color: $gym-dark-gray;
+			    color: $cdcp-dark-gray;
 				}
 
 				.provider
@@ -201,9 +201,9 @@ body * .modal
 	{
 		text-align:left;
 		font-size:16pt;
-		color:$gym-dark-grey;
+		color:$cdcp-dark-grey;
 	}
-	color:$gym-dark-grey;
+	color:$cdcp-dark-grey;
 
 	input,
 	textarea
@@ -221,7 +221,7 @@ body * .modal
 {
 	border:0px;
 	border-radius:0;
-	color:$gym-white;
+	color:$cdcp-white;
 
 	padding:10px;
 
@@ -233,7 +233,7 @@ body * .modal
 
 	label
 	{
-		color:$gym-white;
+		color:$cdcp-white;
 	}
 }
 
@@ -245,7 +245,7 @@ body * .modal
 
 	h1
 	{
-		color:$gym-white;
+		color:$cdcp-white;
 		margin-top:0.5em;
 	}
 
@@ -253,14 +253,14 @@ body * .modal
 
 #dashboard-main.course-content .my-courses .course-item h1
 {
-  color:$gym-white;
+  color:$cdcp-white;
 }
 
 .my-courses
 {
 	.grade-value
 	{
-		color:$gym-white;
+		color:$cdcp-white;
 		font-weight:bold;
 	}
 
@@ -289,7 +289,7 @@ body * .modal
 			}
 			p
 			{
-				color:$gym-white;
+				color:$cdcp-white;
 			}
 		}
 
@@ -356,20 +356,20 @@ body * .modal
 
 		&:focus
 		{
-			border-color:$gym-orange;
+			border-color:$cdcp-blue;
 			box-shadow: none;
 		}
 	}
 	.discovery-submit
 	{
-		background: $gym-orange;
-		border-color: $gym-orange;
+		background: $cdcp-blue;
+		border-color: $cdcp-blue;
 
 
 		&:hover,
 		&:focus{
-			background:$gym-button-background-hover;
-			border: 2px solid$gym-button-background-hover;
+			background:$cdcp-button-background-hover;
+			border: 2px solid$cdcp-button-background-hover;
 			box-shadow: none;
 		}
 	}

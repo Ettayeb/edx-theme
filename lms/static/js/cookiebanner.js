@@ -240,7 +240,7 @@ THE SOFTWARE.
 
             this.default_options = {
                 // autorun: true,
-                cookie: 'gymnasium-cookiebanner-accepted',
+                cookie: 'cdcp-cookiebanner-accepted',
                 closeText: '&#10006;',
                 cookiePath: '/',
                 debug: false,

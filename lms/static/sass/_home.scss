@@ -35,8 +35,8 @@
     .header-title
 		{
 			border:0px;
-			background-color:$gym-textblock-color;
-			color:$gym-white;
+			background-color:$cdcp-textblock-color;
+			color:$cdcp-white;
 			margin:0;
 			width:auto;
 			height:auto;
@@ -56,7 +56,7 @@
 			h1
 			{
 				text-shadow:none;
-				color:$gym-white;
+				color:$cdcp-white;
 				text-transform: uppercase;
 				margin:0;
 				padding:0;
@@ -66,7 +66,7 @@
 
 			h2
 			{
-				color:$gym-white;
+				color:$cdcp-white;
 				margin:0;
 				padding:0;
 				padding-bottom:1.5em;
@@ -76,8 +76,8 @@
 				font-weight:normal;
 			}
 
-			//augmenting the style defined in _gymnasium.scss
-			.gym-button
+			//augmenting the style defined in _cdcp.scss
+			.cdcp-button
 			{
 				text-transform:none;
 				padding:15px 20px;
@@ -95,7 +95,7 @@
 
 	header
 	{
-		border-bottom:$gym-white;
+		border-bottom:$cdcp-white;
 		.outer-wrapper
 		{
 			padding: 150px 10px 0px 740px;
@@ -104,11 +104,11 @@
 		.media
 		{
 			border: 0px;
-			background:$gym-textblock-color;
+			background:$cdcp-textblock-color;
 		}
 	}
 
-  .how-gymnasium-works
+  .how-cdcp-works
   {
     p
     {
@@ -123,7 +123,7 @@
 		{
 			h1
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 				text-align:left;
 				text-transform: none;
 			}
@@ -131,12 +131,12 @@
 
 		hr
 		{
-			border-top-color:$gym-dark-grey;
-			color:$gym-medium-grey;
+			border-top-color:$cdcp-dark-grey;
+			color:$cdcp-medium-grey;
 		}
 	}
 
-	#join-gymnasium
+	#join-cdcp
 	{
 		em
 		{
@@ -146,7 +146,7 @@
 
 			a, a:link, a:link:visited
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 				text-transform:uppercase;
 				font-size:42pt;
 				font-weight:bold;
@@ -161,18 +161,18 @@
 
 		p
 		{
-			color:inherit; //$gym-dark-grey;
+			color:inherit; //$cdcp-dark-grey;
 
 			a, a:link, a:link:visited
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 				font-weight:bold;
 			}
 		}
 
-		a.gym-button
+		a.cdcp-button
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 			display:block;
 			margin: 20px 0 5px 0;
 			padding:19px;
@@ -254,7 +254,7 @@
 	{
 		@extend .container;
 
-		background-color:$gym-medium-grey;
+		background-color:$cdcp-medium-grey;
 	}
 
 	.container-fluid
@@ -296,80 +296,80 @@
 
 	.container-fluid:nth-of-type(odd)
 	{
-		background-color:$gym-white;
+		background-color:$cdcp-white;
 
 		header.header-tab
 		{
 			h1:before
 			{
-				border-bottom: 1.4em solid $gym-white;
+				border-bottom: 1.4em solid $cdcp-white;
 			}
 
 		}
 
 		*
 		{
-			color:$gym-medium-grey;
+			color:$cdcp-medium-grey;
 		}
 
-		.gym-button,
-		.gym-button b
+		.cdcp-button,
+		.cdcp-button b
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 		}
 
 		p
 		{
-			color:$gym-light-grey;
+			color:$cdcp-light-grey;
 
 			a
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 			}
 		}
 
 		h1
 		{
-			color:$gym-medium-grey;
+			color:$cdcp-medium-grey;
 			background-color:transparent;
 		}
 		h1:before, h1:after
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 		}
 
 		hr
 		{
-			background-color:$gym-medium-grey;
+			background-color:$cdcp-medium-grey;
 		}
 
 	}
 
 	.container-fluid:nth-of-type(even)
 	{
-		background-color:$gym-medium-grey;
+		background-color:$cdcp-medium-grey;
 		*
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 		}
 
 		header.header-tab
 		{
 			h1:before
 			{
-				border-bottom: 1.4em solid $gym-medium-grey;
+				border-bottom: 1.4em solid $cdcp-medium-grey;
 			}
 
 		}
 
 		h1, h1:before, h1:after
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 			background-color:transparent;
 		}
 		hr
 		{
-			background-color:$gym-white;
+			background-color:$cdcp-white;
 		}
 
 	}
@@ -481,7 +481,7 @@
       margin-top:1em;
     }
 
-		.gym-course a:hover
+		.cdcp-course a:hover
 		{
 			text-decoration:underline;
 		}
@@ -500,7 +500,7 @@
 
 			h2
 			{
-				color:$gym-medium-grey;
+				color:$cdcp-medium-grey;
 				text-align: center;
 			}
 
@@ -515,14 +515,14 @@
 
 			.course-preview
       {
-        background: $gym-medium-grey;
+        background: $cdcp-medium-grey;
         padding:1em;
         margin-top:0;
 
         h2
   			{
   				height:4.5em;
-          color: $gym-orange;
+          color: $cdcp-blue;
           text-align: left;
           margin:0;
           padding:0;
@@ -535,7 +535,7 @@
 
 		p
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 		}
 	}
 
@@ -597,7 +597,7 @@
 
         .job-title
         {
-          color:$gym-orange;
+          color:$cdcp-blue;
         }
 
         .job-market
@@ -625,7 +625,7 @@
   .view-all-jobs
   {
     margin-top:1.5em;
-    color:$gym-orange;
+    color:$cdcp-blue;
     font-size:16pt;
     font-weight:bold
   }

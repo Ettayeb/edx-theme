@@ -67,7 +67,7 @@ from edxmako.shortcuts import marketing_link
               var email = "${user.email}";
               var courseId = "${course.display_number_with_default}";
 
-              Gymnasium.RecordCourseEnrollment(fname, lname, email, courseId, function(){
+              Cdcp.RecordCourseEnrollment(fname, lname, email, courseId, function(){
                 location.href = "${reverse('dashboard')}";
               });
             %endif  
@@ -90,7 +90,7 @@ from edxmako.shortcuts import marketing_link
     })(this)
 
     $(function(){
-      Gymnasium.setBackgroundColorOfElementFromImage('.hero-banner', '#course-image');
+      Cdcp.setBackgroundColorOfElementFromImage('.hero-banner', '#course-image');
     });
   </script>
 
@@ -125,7 +125,7 @@ from edxmako.shortcuts import marketing_link
         <span class="text-center">
           %if user.is_authenticated() and registered:
             %if show_courseware_link:
-              <a href="${course_target}" class="gym-button get-started text-center">
+              <a href="${course_target}" class="cdcp-button get-started text-center">
                 <b>${_("Go to Class")}</b>
               </a>
             %endif
@@ -137,7 +137,7 @@ from edxmako.shortcuts import marketing_link
           % elif not is_shib_course and not can_enroll:
             <span class="register disabled">${_("Enrollment is Closed")}</span>
           %else:
-            <a href="#" class="gym-button register">
+            <a href="#" class="cdcp-button register">
               <b>${_("Get Started")}</b>
             </a>
             <div id="register_error"></div>
@@ -147,7 +147,7 @@ from edxmako.shortcuts import marketing_link
       <div class="meta time col-md-5">
         % if staff_access and studio_url is not None:
           <div class="wrap-instructor-info studio-view pull-right">
-            <a class="instructor-info-action gym-button" href="${studio_url}">${_("View About Page in studio")}</a>
+            <a class="instructor-info-action cdcp-button" href="${studio_url}">${_("View About Page in studio")}</a>
           </div>
         % endif
         <time><!-- length of course will go here one day --></time>

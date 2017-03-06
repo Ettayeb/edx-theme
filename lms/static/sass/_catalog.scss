@@ -55,7 +55,7 @@
 
 		a:active, a:hover
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 		}
 
 	}
@@ -93,7 +93,7 @@
 		h1
 		{
 			font: 900 2em/1.2 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
-	    color: $gym-dark-grey;
+	    color: $cdcp-dark-grey;
 	    letter-spacing: .04em;
 	    word-spacing: .05em;
 	    text-transform: uppercase;
@@ -129,7 +129,7 @@
 			background: #444;
 	    padding: 1.2em;
 
-			.gym-button b
+			.cdcp-button b
 			{
 				font: bold 1.4em/1 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
 				letter-spacing: .025em;
@@ -140,13 +140,13 @@
 		p
 		{
 			font: 1em/1.4 "Helvetica Neue", Helvetica, sans-serif;
-			color: $gym-dark-color;
+			color: $cdcp-dark-color;
 			margin-top: .5em;
 		}
 
 		dl
 		{
-			color: $gym-dark-grey;
+			color: $cdcp-dark-grey;
 			letter-spacing: .06em;
 			word-spacing: .05em;
 			margin-bottom: .6em;
@@ -157,7 +157,7 @@
 		dt
 		{
 			font: 900 1em/1.2 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
-			color: $gym-dark-gray;
+			color: $cdcp-dark-gray;
 			letter-spacing: .06em;
 			word-spacing: .05em;
 			text-transform: uppercase;
@@ -168,13 +168,13 @@
 		{
 			display: list-item;
 			list-style: disc;
-			color: $gym-orange;
+			color: $cdcp-blue;
 			margin-top: .3em;
 
 			span
 			{
 				font: 1em/1.4 "Helvetica Neue", Helvetica, sans-serif;
-				color:$gym-dark-grey;
+				color:$cdcp-dark-grey;
 			}
 		}
 
@@ -235,9 +235,9 @@
 	}
 
 
-	.join-gymnasium
+	.join-cdcp
 	{
-		background-color:$gym-medium-grey;
+		background-color:$cdcp-medium-grey;
 		padding:10px;
 
 		p
@@ -246,7 +246,7 @@
 		}
 		h1
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 			text-align:center;
 			font-size:32px;
 		}

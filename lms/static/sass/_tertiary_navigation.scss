@@ -52,14 +52,14 @@
 			button.account-nav-link:hover,
 			button.account-nav-link.active:hover
 			{
-				color:$gym-orange;
-				border-color:$gym-orange !important;
+				color:$cdcp-blue;
+				border-color:$cdcp-blue !important;
 				border-width:1px !important;
 			}
 
 			button.account-nav-link.active
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 				border-color:transparent !important;
 				border-width: 1px !important;
 			}
@@ -78,7 +78,7 @@
 		{
 			padding-left:0px;
 			border-bottom:none;
-			color:$gym-medium-gray;
+			color:$cdcp-medium-gray;
 
 			b
 			{
@@ -92,14 +92,14 @@
 
 		a:hover,
 		a:focus:hover{
-			color:$gym-orange;
+			color:$cdcp-blue;
 			border:none;
 			background:none;
 			text-decoration:none;
 
 			b
 			{
-				border-bottom: 1px solid $gym-orange;
+				border-bottom: 1px solid $cdcp-blue;
 				text-decoration:none;
 			}
 		}
@@ -112,7 +112,7 @@
 			box-shadow: none;
 			text-shadow: none;
 			background: none;
-			color:$gym-orange;
+			color:$cdcp-blue;
 			border:none;
 			text-decoration:none;
 		}

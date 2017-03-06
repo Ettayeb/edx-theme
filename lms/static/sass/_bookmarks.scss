@@ -26,7 +26,7 @@
 .course-content {
   .bookmark-button {
     border: 0;
-    background: $gym-orange;
+    background: $cdcp-blue;
     font-family: brandron-groteque, "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
     font-size: 1em;
@@ -44,7 +44,7 @@
 
     &.bookmarked
     {
-      background: $gym-orange;
+      background: $cdcp-blue;
     }
     
     &.bookmarked:before {
@@ -55,15 +55,15 @@
     &:hover,
     &.bookmarked:hover{
       border:none;
-      background-color:$gym-button-background-hover;
+      background-color:$cdcp-button-background-hover;
       &:before
       {
-        color:$gym-orange;
+        color:$cdcp-blue;
       }
     }
 
     &.is-active:before {
-      color: $gym-orange;
+      color: $cdcp-blue;
     }
 
   }

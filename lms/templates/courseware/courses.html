@@ -31,7 +31,7 @@
 <%block name="pagetitle">${_("Courses")}</%block>
 
 
-<section class="find-courses" id="gym-catalog">
+<section class="find-courses" id="cdcp-catalog">
 
   <div class="course-title container-fluid">
     <header class="container">
@@ -48,7 +48,7 @@
           <a href="#full">Full Courses</a>
         </li>
         <li>
-          <a href="#gymshorts">Gym Shorts</a>
+          <a href="#cdcpshorts">Gym Shorts</a>
         </li>
       </ul>
     </div>
@@ -102,13 +102,13 @@
               </ul>
             </div>
 
-            <h1 id="gymshorts">
+            <h1 id="cdcpshorts">
               Gym Shorts
             </h1>
             <p class="hero">
               Gym Shorts are short, snackable courses that all last under an hour. Like our longer courses, they are practical, taught by experienced practitioners, and focused on in-demand skills and technologies.
             </p>
-            <ul class="listing-courses" id="gym-shorts-list">
+            <ul class="listing-courses" id="cdcp-shorts-list">
 
             </ul>
 
@@ -124,7 +124,7 @@
         </div>
       <div class="col-md-3 sidebar">
           ## include sidebar content from git repo
-          ${_(urllib2.urlopen('https://raw.githubusercontent.com/gymnasium/static-site-content/gh-pages/upcoming-courses.html').read())}
+          ${_(urllib2.urlopen('https://raw.githubusercontent.com/cdcp/static-site-content/gh-pages/upcoming-courses.html').read())}
         </div>  
       </div>
     </div> 
@@ -143,7 +143,7 @@
 
     var sortCourses = function () {
       //move courses whose IDs start with a 0 to the Gym Shorts list
-      $("li.course-item[data-course-id^='0']").appendTo('#gym-shorts-list');
+      $("li.course-item[data-course-id^='0']").appendTo('#cdcp-shorts-list');
 
       //hide beta Courses
       $("li.course-item").each(function(idx, elem){

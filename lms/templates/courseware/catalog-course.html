@@ -13,7 +13,7 @@ from courseware.courses import get_course_about_section
         <img class="img-responsive" src="${course.course_image_url}" alt="${course.display_number_with_default | h} ${course.display_name_with_default} Cover Image" />
       </a>
       <figcaption>
-        <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}" class="gym-button"><b>Learn More</b></a>
+        <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}" class="cdcp-button"><b>Learn More</b></a>
       </figcaption>
     </figure>
     <div class="col-md-8 course-description">

@@ -1,10 +1,10 @@
-/// File:         Gymnasium.js
-/// Description:  library containing helper functions used on Gymnasium
+/// File:         Cdcp.js
+/// Description:  library containing helper functions used on Cdcp
 /// Author:       @mbifulco
 
-function Gymnasium(){}
+function Cdcp(){}
 
-Gymnasium.prototype.setBackgroundColorOfElementFromImage = function (element, image)
+Cdcp.prototype.setBackgroundColorOfElementFromImage = function (element, image)
 {
   var canvas= document.createElement('canvas');
   var myImg = document.createElement('img');
@@ -31,7 +31,7 @@ Gymnasium.prototype.setBackgroundColorOfElementFromImage = function (element, im
 
 ///get a URL parameter passed in with HTTP GET
 ///NOTE: this function is not case sensitive
-Gymnasium.prototype.getUrlParameter = function getUrlParameter(sParam) {
+Cdcp.prototype.getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
         sParameterName,
@@ -46,14 +46,14 @@ Gymnasium.prototype.getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
-Gymnasium.prototype.injectFBTrackingPixel = function(){
+Cdcp.prototype.injectFBTrackingPixel = function(){
   var trackingPix = $('<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1074612282557779&ev=PageView&noscript=1" /></noscript>');
   $('body').append(trackingPix);
   fbq('init', '1074612282557779');
   fbq('track', "PageView");
 };
 
-Gymnasium.prototype.LoadJobsForMarket = function(selected_market, limit, page, callback)
+Cdcp.prototype.LoadJobsForMarket = function(selected_market, limit, page, callback)
 {
 
   //limit is the number of listings to return.  Default is 5.
@@ -503,7 +503,7 @@ Gymnasium.prototype.LoadJobsForMarket = function(selected_market, limit, page, c
     var queryJobsForMarket = function(market)
     {
 
-      var url = "https://aquent.com/api/content/render/false/type/jsonp/callback/Gymnasium.myCustomCallback/query/+contentType:AquentJob%20+AquentJob.isPosted:true%20+languageId:1%20+deleted:false%20+working:true" +
+      var url = "https://aquent.com/api/content/render/false/type/jsonp/callback/Cdcp.myCustomCallback/query/+contentType:AquentJob%20+AquentJob.isPosted:true%20+languageId:1%20+deleted:false%20+working:true" +
                 "%20+AquentJob.locationId:" + market +
                 "/orderby/AquentJob.postedDate%20desc" +
                 "/limit/" + limit +
@@ -549,7 +549,7 @@ Gymnasium.prototype.LoadJobsForMarket = function(selected_market, limit, page, c
     queryJobsForMarket(market);
 }
 
-Gymnasium.prototype.myCustomCallback = function(response)
+Cdcp.prototype.myCustomCallback = function(response)
 {
   var list = $("#find-jobs-job-list");
   var market_label = $('#find-jobs-market-name');
@@ -561,7 +561,7 @@ Gymnasium.prototype.myCustomCallback = function(response)
 
   for (var i = 0; i < jobs.length; i ++)
   {
-    var utm_info = "?utm_source=thegymnasium.com&utm_medium=web&utm_campaign=homepagejobs";
+    var utm_info = "?utm_source=thecdcp.com&utm_medium=web&utm_campaign=homepagejobs";
 
     var li = '<li class="row">';
     li += '<a href="https://aquent.com/find-work/' + jobs[i].jobId + utm_info + '">';
@@ -575,7 +575,7 @@ Gymnasium.prototype.myCustomCallback = function(response)
   }
 }
 
-Gymnasium.prototype.RecordCourseEnrollment = function(firstName, lastName, emailAddress, courseId, callback)
+Cdcp.prototype.RecordCourseEnrollment = function(firstName, lastName, emailAddress, courseId, callback)
 {
   var data = {
     first_name:       firstName,
@@ -583,16 +583,16 @@ Gymnasium.prototype.RecordCourseEnrollment = function(firstName, lastName, email
     email:            emailAddress,
     course:           courseId,
     utm_campaign:     courseId + " - Enrollment",
-    carrot_type:      "Gymnasium Enrollment",
+    carrot_type:      "Cdcp Enrollment",
     carrot_topic:     "GYM-" + courseId,
     PROC:             "AWUISubmitExternalLead",
 
   };
-  Gymnasium.RecordCloudwallRecord(data, callback);
+  Cdcp.RecordCloudwallRecord(data, callback);
 
 };
 
-Gymnasium.prototype.RecordExamGrade = function(email, courseId, grade, callback)
+Cdcp.prototype.RecordExamGrade = function(email, courseId, grade, callback)
 {
   var data = {
     leadDestination:  "cw-rc",
@@ -601,10 +601,10 @@ Gymnasium.prototype.RecordExamGrade = function(email, courseId, grade, callback)
     course_id:        courseId,
     utm_campaign:     courseId + " - Grade"
   };
-  return Gymnasium.RecordCloudwallRecord(data, callback);
+  return Cdcp.RecordCloudwallRecord(data, callback);
 };
 
-Gymnasium.prototype.RecordRegistration = function(emailAddress, firstName, lastName, cityId, callback)
+Cdcp.prototype.RecordRegistration = function(emailAddress, firstName, lastName, cityId, callback)
 {
   var data = {
     first_name:       firstName,
@@ -612,34 +612,34 @@ Gymnasium.prototype.RecordRegistration = function(emailAddress, firstName, lastN
     email:            emailAddress,
     location:         cityId,
     utm_campaign:     "Registration",
-    carrot_type:      "Gymnasium Registration",
+    carrot_type:      "Cdcp Registration",
     carrot_topic:     "GYM REG",
     PROC:             "AWUISubmitExternalLead"
   };
 
-  return Gymnasium.RecordCloudwallRecord(data, callback);
+  return Cdcp.RecordCloudwallRecord(data, callback);
 };
 
-Gymnasium.prototype.RecordCloudwallRecord = function(jsonData, callback)
+Cdcp.prototype.RecordCloudwallRecord = function(jsonData, callback)
 {
-  jsonData.utm_source = "gymnasium.com";
+  jsonData.utm_source = "cdcp.com";
   jsonData.utm_medium = "web";
   jsonData.utm_content = "not-provided";
   jsonData.utm_term = "not-provided";
   jsonData.agent_email = "tmashburn@aquent.com";
   jsonData.agent_id = "1694600";
   jsonData.agent_name = "TALENT LEAD NURTURING";
-  jsonData.carrot = "thegymnasium.com";
+  jsonData.carrot = "thecdcp.com";
   jsonData.subdomain = CLOUDWALL_ENV;
   jsonData.language = "en_US";
   jsonData.medium = "1009";
-  jsonData.referring_site = "thegymnasium.com";
+  jsonData.referring_site = "thecdcp.com";
   jsonData.status = "Talent";
-  jsonData.referer = "thegymnasium.com";
+  jsonData.referer = "thecdcp.com";
 
 
   $.ajax(
-    "https://aquent.com/application/gymnasium-lead.htm",
+    "https://aquent.com/application/cdcp-lead.htm",
     {
       contentType: "application/json",
       dataType: "jsonp",
@@ -668,4 +668,4 @@ t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
 document,'script','//connect.facebook.net/en_US/fbevents.js');
 <!-- End Facebook Pixel Code -->
 
-var Gymnasium = new Gymnasium();
+var Cdcp = new Cdcp();

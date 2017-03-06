@@ -106,7 +106,7 @@
   
   a:hover
   {
-    border-bottom: 1px solid $gym-orange;
+    border-bottom: 1px solid $cdcp-blue;
   }
 }
 
@@ -133,7 +133,7 @@ body.register,
       padding-top: .6em;
       padding-bottom: .6em;
       border: 0;
-      border-bottom: .200em solid $gym-orange;
+      border-bottom: .200em solid $cdcp-blue;
       margin-top: .4em;
       margin-bottom: .4em;
       -moz-box-sizing: border-box;
@@ -161,7 +161,7 @@ body
   { 
     .field.is-focused
     {
-      color:$gym-orange;
+      color:$cdcp-blue;
 
       input, 
       label, 
@@ -169,11 +169,11 @@ body
       span.tip,
       .tip, 
       {
-        color:$gym-orange;
+        color:$cdcp-blue;
       }
 
       input:focus{
-        outline-color:$gym-orange;
+        outline-color:$cdcp-blue;
       }
     }
   }

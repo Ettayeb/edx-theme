@@ -97,15 +97,15 @@ from student.helpers import (
           % if show_courseware_link:
             % if course_overview.has_ended():
              % if not is_course_blocked:
-              <a href="${course_target}" class="gym-button enter-course archived">${_('View Archived Course')}</a>
+              <a href="${course_target}" class="cdcp-button enter-course archived">${_('View Archived Course')}</a>
             % else:
-              <a class="gym-button enter-course-blocked archived">${_('View Archived Course')}</a>
+              <a class="cdcp-button enter-course-blocked archived">${_('View Archived Course')}</a>
             % endif
             % else:
             % if not is_course_blocked:
-              <a href="${course_target}" class="gym-button"><b>${_('Go to Class')}</b></a>
+              <a href="${course_target}" class="cdcp-button"><b>${_('Go to Class')}</b></a>
             % else:
-              <a class="gym-button enter-course-blocked"><b>${_('Go to Class')}</b></a>
+              <a class="cdcp-button enter-course-blocked"><b>${_('Go to Class')}</b></a>
             % endif
             % endif
           % endif
@@ -171,6 +171,6 @@ from student.helpers import (
 
 <script>
   $(function(){
-    Gymnasium.setBackgroundColorOfElementFromImage('#course-header-${course_overview.number}', '#course-image-${course_overview.number}');
+    Cdcp.setBackgroundColorOfElementFromImage('#course-header-${course_overview.number}', '#course-image-${course_overview.number}');
   });
 </script>

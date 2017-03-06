@@ -30,7 +30,7 @@ import urllib2
         $('.migration-message').hide();
         $('#already-registered').hide();
         $('#page-title').text("Reactivate your Account");
-        $('#page-subtitle').text("Please complete the following required information to reactivate your Gymnasium account.");
+        $('#page-subtitle').text("Please complete the following required information to reactivate your Cdcp account.");
         $('#submit b').text("ACTIVATE NOW");
         $('#email-tip').html("<b>Note</b>: if you need to change your email address, please do that after you've reactivated your account.");
 
@@ -64,10 +64,10 @@ import urllib2
         $("label").parent().removeClass("is-focused");
       });
 
-      var enrollment_action = Gymnasium.getUrlParameter("enrollment_action");
+      var enrollment_action = Cdcp.getUrlParameter("enrollment_action");
       if( enrollment_action === "enroll")
       {
-        var course_id = Gymnasium.getUrlParameter("COURSE_ID").trim();
+        var course_id = Cdcp.getUrlParameter("COURSE_ID").trim();
         switch(course_id.toUpperCase())
         {
           case "GYM/105/0":
@@ -75,7 +75,7 @@ import urllib2
           case "GYM/100/0":
           case "GYM/104/0":
           case "GYM/106/0":
-            //Gymnasium.injectFBTrackingPixel();
+            //Cdcp.injectFBTrackingPixel();
             break;
           default:
             //not a special course, we won't do tracking here
@@ -102,7 +102,7 @@ import urllib2
         var market_name = $('#market option:selected').text();
         var email = $('#email').val();
 
-        Gymnasium.RecordRegistration(email, fname, lname, market_id, function(){
+        Cdcp.RecordRegistration(email, fname, lname, market_id, function(){
             //navigate AFTER we confirm the registration is complete.
             if (!isExternal(nextUrl)) {
               location.href=nextUrl;
@@ -179,7 +179,7 @@ import urllib2
       </div>
       
       <div class="col-md-3 additional-information">
-        ${urllib2.urlopen('https://raw.githubusercontent.com/gymnasium/static-site-content/gh-pages/register-sidebar.html').read()}
+        ${urllib2.urlopen('https://raw.githubusercontent.com/cdcp/static-site-content/gh-pages/register-sidebar.html').read()}
       </div>
     </div>
   </div>

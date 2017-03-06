@@ -10,7 +10,7 @@ from courseware.courses import get_course_about_section
 # this template gets rendered on the home page to represent a featured course
 %>
 
-<article id="${course.id | h}" class="gym-course">
+<article id="${course.id | h}" class="cdcp-course">
   <a href="${reverse('about_course', args=[course.id.to_deprecated_string()])}">
   <div class="course-inner-wrapper">
       <section class="info text-center">

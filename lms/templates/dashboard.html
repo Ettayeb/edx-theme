@@ -175,7 +175,7 @@ from openedx.core.djangolib.markup import HTML, Text
 
               % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
               <div class="col-md-4 col-md-offset-4"> 
-                <a class="gym-button natural" href="${marketing_link('COURSES')}">
+                <a class="cdcp-button natural" href="${marketing_link('COURSES')}">
                   <b>${_("Explore courses")}</b>
                 </a>
               </div>
@@ -278,7 +278,7 @@ from openedx.core.djangolib.markup import HTML, Text
   <div class="dialog" role="dialog" aria-labelledby="password-reset-email">
 
     <button class="close-modal" tabindex="1" data-dismiss="modal">
-      <b class="close-modal-content gym-button">
+      <b class="close-modal-content cdcp-button">
         ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
         ${_("Dismiss")}
       </b>
@@ -323,7 +323,7 @@ from openedx.core.djangolib.markup import HTML, Text
   <div class="dialog" role="dialog" aria-labelledby="change_email_title">
 
     <button class="close-modal" tabindex="1" data-dismiss="modal">
-      <b class="close-modal-content gym-button">
+      <b class="close-modal-content cdcp-button">
         ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
         ${_("Dismiss")}
       </b>
@@ -368,7 +368,7 @@ from openedx.core.djangolib.markup import HTML, Text
             </p>
           </div>
           <div class="row">
-            <button class="gym-button col-md-4 col-md-offset-4" tabindex="2" name="submit" type="submit">
+            <button class="cdcp-button col-md-4 col-md-offset-4" tabindex="2" name="submit" type="submit">
               <b>
                 ${_("Change Email")}
               </b>
@@ -384,7 +384,7 @@ from openedx.core.djangolib.markup import HTML, Text
   <div class="dialog" role="dialog" aria-labelledby="change-name-title">
 
     <button class="close-modal" tabindex="1" data-dismiss="modal">
-      <b class="close-modal-content gym-button">
+      <b class="close-modal-content cdcp-button">
         ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
         ${_("Dismiss")}
       </b>
@@ -438,7 +438,7 @@ from openedx.core.djangolib.markup import HTML, Text
         <p>We will send a confirmation to both <b class="email-current">googlebot@gmail.com</b> and your new email address as part of the process.</p>
       </div>
       <div class="row">
-        <button class="gym-button col-md-4 col-md-offset-4" tabindex="2" name="submit" type="submit">
+        <button class="cdcp-button col-md-4 col-md-offset-4" tabindex="2" name="submit" type="submit">
           <b>
             ${_("Change My Name")}
           </b>
@@ -454,7 +454,7 @@ from openedx.core.djangolib.markup import HTML, Text
 <section id="unenroll-modal" class="modal unenroll-modal" aria-hidden="true">
   <div class="dialog" role="dialog" aria-labelledby="unenrollment-modal-title">
     <button class="close-modal" tabindex="1" data-dismiss="modal">
-      <b class="close-modal-content gym-button">
+      <b class="close-modal-content cdcp-button">
         ## Translators: this is a control to allow users to exit out of this modal interface (a menu or piece of UI that takes the full focus of the screen)
         ${_("Dismiss")}
       </b>
@@ -484,7 +484,7 @@ from openedx.core.djangolib.markup import HTML, Text
         <input name="enrollment_action" type="hidden" value="unenroll" />
 
         <div class="row">
-          <button class="gym-button col-md-4 col-md-offset-4" tabindex="2" name="submit" type="submit" id="unenroll-button">
+          <button class="cdcp-button col-md-4 col-md-offset-4" tabindex="2" name="submit" type="submit" id="unenroll-button">
             <b>
               ${_("Unenroll")}
             </b>

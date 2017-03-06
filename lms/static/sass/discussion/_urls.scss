@@ -2,7 +2,7 @@
 	NOTE:
 	
 	Relative URLs must be split out into separate files at each tier of the 
-	Theme that uses SASS because _gymnasium.scss is used by lms-main-v1.scss, 
+	Theme that uses SASS because _cdcp.scss is used by lms-main-v1.scss, 
 	lms-main-v2.scss, AND /discussion/lms-discussion-main.scss.  
 
 	Notice that the relative urls in the _urls.scss file on the /sass level
@@ -74,6 +74,6 @@
 	}
 
 
-$video-thumb-url: '../../images/gymnasiumLogo.png';
+$video-thumb-url: '../../images/cdcpLogo.png';
 $aquent-icon-image: url('../../images/aquent-icon.png');
 $vitamin-t-icon-image: url('../../images/vitamin-t-icon.png');

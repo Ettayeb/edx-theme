@@ -5,10 +5,10 @@
 from django.conf import settings
 %>
 
-<meta property="og:url" content="http://thegymnasium.com/" />
-<meta property="og:title" content="Aquent Gymnasium" />
+<meta property="og:url" content="http://thecdcp.com/" />
+<meta property="og:title" content="Aquent Cdcp" />
 <meta property="og:image" content="${static.url('images/social-share-400.png')}" />
-<meta property="og:description" content="At Aquent Gymnasium, we offer free online courses focused on HTML and CSS, responsive design, UX design, and an array of front-end development tools." />
+<meta property="og:description" content="At Aquent Cdcp, we offer free online courses focused on HTML and CSS, responsive design, UX design, and an array of front-end development tools." />
 <meta property="og:keywords" content="free online courses" />
 
 
@@ -33,12 +33,7 @@ from django.conf import settings
 	data-moreinfo="/privacy">
 </script>
 
-## inject some global variables from configurations
-<script>
-  var CLOUDWALL_ENV = "${settings.APPSEMBLER_FEATURES['CLOUDWALL_SERVER_PATH']}";
-</script>
-
-<script src="${static.url('js/gymnasium.js')}"> </script>
+<script src="${static.url('js/cdcp.js')}"> </script>
 
 
 <script>
@@ -96,13 +91,13 @@ from django.conf import settings
     );
 
 		$('.course-tabs li a:contains("Forum")').each(function(idx,value){
-			//TODO: Unhack this silly logic to hide forum tab for gym shorts
+			//TODO: Unhack this silly logic to hide forum tab for cdcp shorts
 
 			//we're looking at the href property of this anchor to see if it contains
-			//a course link that has "Gym/00" in it.  All gym shorts start with "0"
+			//a course link that has "Gym/00" in it.  All cdcp shorts start with "0"
 			//so that should hide this link. Note that this does _not_ disable
 			//forums... those pages will still exist, but we won't like to them.
-			if ($(value).attr("href").toLowerCase().indexOf("gym/0") > 0)
+			if ($(value).attr("href").toLowerCase().indexOf("cdcp/0") > 0)
 			{
 				$(value).parent().hide();
 			}

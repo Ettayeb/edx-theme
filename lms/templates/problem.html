@@ -27,7 +27,7 @@ from openedx.core.djangolib.markup import HTML
     </div>
   </div>
   <div class="row">
-    <a class="gym-button text-center col-md-2 col-md-offset-5" href="https://www.surveymonkey.com/s/JYJPMSS" target="_blank">
+    <a class="cdcp-button text-center col-md-2 col-md-offset-5" href="https://www.surveymonkey.com/s/JYJPMSS" target="_blank">
       Take Our Survey
     </a>
   </div>
@@ -61,7 +61,7 @@ from openedx.core.djangolib.markup import HTML
     </div>
   </div>
   <div class="row">
-    <a class="gym-button text-center col-md-2 col-md-offset-5" href="https://www.surveymonkey.com/s/JYJPMSS" target="_blank">
+    <a class="cdcp-button text-center col-md-2 col-md-offset-5" href="https://www.surveymonkey.com/s/JYJPMSS" target="_blank">
       Take Our Survey
     </a>
   </div>
@@ -78,19 +78,19 @@ from openedx.core.djangolib.markup import HTML
     <div class="problem-hint" aria-live="polite"></div>
     % endif
     % if check_button:
-    <button class="gym-button natural check ${ check_button }" data-checking="${ check_button_checking }" data-value="${ check_button }"><span class="check-label">${ check_button }</span><span class="sr"> ${_("your answer")}</span></button>
+    <button class="cdcp-button natural check ${ check_button }" data-checking="${ check_button_checking }" data-value="${ check_button }"><span class="check-label">${ check_button }</span><span class="sr"> ${_("your answer")}</span></button>
     % endif
     % if demand_hint_possible:
-    <button class="gym-button natural hint-button" data-value="${_('Hint')}">${_('Hint')}</button>
+    <button class="cdcp-button natural hint-button" data-value="${_('Hint')}">${_('Hint')}</button>
     % endif
     % if reset_button:
-    <button class="gym-button natural reset" data-value="${_('Reset')}">${_('Reset')}<span class="sr"> ${_("your answer")}</span></button>
+    <button class="cdcp-button natural reset" data-value="${_('Reset')}">${_('Reset')}<span class="sr"> ${_("your answer")}</span></button>
     % endif
     % if save_button:
-    <button class="gym-button natural save" data-value="${_('Save')}">${_('Save')}<span class="sr"> ${_("your answer")}</span></button>
+    <button class="cdcp-button natural save" data-value="${_('Save')}">${_('Save')}<span class="sr"> ${_("your answer")}</span></button>
     % endif
     % if answer_available:
-    <button class="gym-button natural show"><span class='sr'>${_('Toggle Answer Visibility')}</span><span class="show-label">${_('Show Answer')}</span></button>
+    <button class="cdcp-button natural show"><span class='sr'>${_('Toggle Answer Visibility')}</span><span class="show-label">${_('Show Answer')}</span></button>
     % endif
     % if attempts_allowed :
     <div class="submission_feedback" aria-live="polite">
@@ -159,14 +159,14 @@ from openedx.core.djangolib.markup import HTML
 
       if (progress_string.length > 0)
       {
-        //Gymnasium.RecordExamGrade =  function(email, courseId, grade, callback)
+        //Cdcp.RecordExamGrade =  function(email, courseId, grade, callback)
         % if (user.is_authenticated()):
           var email = "${user.email}";
           var courseID = $('#__course_number__').text();
           
           if (email && courseID && score)
           {
-            // Gymnasium.RecordExamGrade(email, courseID, score);
+            // Cdcp.RecordExamGrade(email, courseID, score);
           }
         %endif
 

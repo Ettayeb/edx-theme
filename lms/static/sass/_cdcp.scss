@@ -22,43 +22,43 @@ $baseline: 20px;
 /* colors */
 
 
-//Gymnasium Theme Colors
-$gym-grey-dark: #262626;
-$gym-dark-color: #262626;
-$gym-light-color: #FFFFFF;
+//CDCP Theme Colors
+$cdcp-grey-dark: #262626;
+$cdcp-dark-color: #262626;
+$cdcp-light-color: #FFFFFF;
 
-$gym-orange: #f89820;
-$gym-orange-light: #f8971d;
-$gym-orange-light: rgba(248,151,32,0.9);
+$cdcp-blue: #19cbcf;
+$cdcp-blue-light: #72d3d5;
+$cdcp-blue-light: #19cbcf;
 
-$gym-dark-grey: #222222;
-$gym-dark-gray: $gym-dark-grey;
+$cdcp-dark-grey: #222222;
+$cdcp-dark-gray: $cdcp-dark-grey;
 
-$gym-medium-grey: #444444;
-$gym-medium-gray: $gym-medium-grey;
+$cdcp-medium-grey: #444444;
+$cdcp-medium-gray: $cdcp-medium-grey;
 
-$gym-light-grey: #999999;
-$gym-light-gray: $gym-light-grey;
+$cdcp-light-grey: #999999;
+$cdcp-light-gray: $cdcp-light-grey;
 
-$gym-white: #ebebeb;
+$cdcp-white: #ebebeb;
 
-$gym-textblock-color:rgba(45,45,45,0.70);
+$cdcp-textblock-color:rgba(45,45,45,0.70);
 
-$gym-button-background-hover:#a6a6a6;
-$gym-button-background-active:#939393;
-$gym-button-background-focus: $gym-button-background-active;
+$cdcp-button-background-hover:#a6a6a6;
+$cdcp-button-background-active:#939393;
+$cdcp-button-background-focus: $cdcp-button-background-active;
 //End Gym theme colors
 
 //Main Color Variables
 $main-color: #F89720;
-$dark-color: $gym-orange; //#ea281f; //Link Color
+$dark-color: $cdcp-blue; //#ea281f; //Link Color
 $light-color: #f4e00c; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
 $bg-color: #f7fe81; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
 
 
 //Main BG Color Variables
 $main-bg:  #f22537;
-$main-bg-60: $gym-light-grey; //Main Border/HR Color
+$main-bg-60: $cdcp-light-grey; //Main Border/HR Color
 $main-bg-25: lighten($main-bg, 25%);
 
 //Secondary Color Variables
@@ -97,7 +97,7 @@ $container-bg: transparent;
 $login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
-$header-bg:  $gym-grey-dark;//transparentize(lighten($secondary, 18.5%), .25);
+$header-bg:  $cdcp-grey-dark;//transparentize(lighten($secondary, 18.5%), .25);
 
 $courseware-header-image: none;
 $courseware-header-bg: transparentize(lighten($secondary, 18.5%), .25);
@@ -125,8 +125,8 @@ $site-status-color: $bg-color;
 $header-graphic-super-color: $dark-color;
 $header-graphic-sub-color: $lighter-base-font-color;
 
-$header-link-color: $gym-light-color;
-$header-link-hover: $gym-dark-color;
+$header-link-color: $cdcp-light-color;
+$header-link-hover: $cdcp-dark-color;
 
 $button-color: $main-color;
 $button-archive-color: $gray-3;
@@ -334,7 +334,7 @@ body.register,
 	a:active,
 	a:link:active,
 	{		
-		color: $gym-orange;
+		color: $cdcp-blue;
 		font-family:$theme-serif-font;
 		border-bottom:none;
 	}
@@ -353,8 +353,8 @@ body.register,
 	p a:link:hover,
 	p a:hover
 	{
-		border-bottom:1px solid $gym-orange;
-		color:$gym-orange;
+		border-bottom:1px solid $cdcp-blue;
+		color:$cdcp-blue;
 		text-decoration:none;
 	}
 }
@@ -428,18 +428,18 @@ body.register,
 
 .right-gutter
 {
-	border-right:15px solid $gym-white;
+	border-right:15px solid $cdcp-white;
 }
 
 #primary-nav
 {
   height:50px;
 
-  .gym-nav-icon-container
+  .cdcp-nav-icon-container
   {
     padding-top:13px;
   }
-  .gym-nav-icon-container:hover
+  .cdcp-nav-icon-container:hover
   {
     background-color:transparent;
   }
@@ -460,11 +460,11 @@ body.register,
 	.nav li a
 	{
 		background-color:transparent;
-		color:$gym-orange;
+		color:$cdcp-blue;
 
 		.caret
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 		}
 	}
 
@@ -472,12 +472,12 @@ body.register,
 	{
 		//odd specificity to overwrite bootstrap defaults
 		background-color:transparent;
-		color:$gym-white;
+		color:$cdcp-white;
 		border-bottom:none;
 
 		.caret
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 		}
 	}
 
@@ -486,18 +486,18 @@ body.register,
 		background-color:white;
 		a
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 		}
 		a:hover .caret
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 		}
 
 		.dropdown-menu
 		{
 			border:none;
 			a:hover{
-				color:$gym-dark-grey;
+				color:$cdcp-dark-grey;
 			}
 		}
 
@@ -517,18 +517,18 @@ body.register,
 	#dropdown
 	{
 		display:inline-block;
-		color:$gym-orange;
+		color:$cdcp-blue;
 		border:none;
 	}
 
 	#dropdown:hover, #dropdown:hover span, #dropdown:hover span.caret
 	{
-			color:$gym-orange;
+			color:$cdcp-blue;
 	}
 
 	#dropdown:hover #dropdown:link:hover
 	{
-			color:$gym-orange;
+			color:$cdcp-blue;
 			border:none;
 	}
 
@@ -547,7 +547,7 @@ body.register,
 
 			a:hover, anchor:link:hover
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 				text-decoration: none;
 			}
 		}
@@ -574,7 +574,7 @@ body.register,
 #secondary-nav
 {
 	height:70px;
-	background-color:$gym-dark-grey;
+	background-color:$cdcp-dark-grey;
 
   >.container
   {
@@ -584,10 +584,10 @@ body.register,
 	a
 	{
 		font-size:1.2em;
-		color:$gym-white;
+		color:$cdcp-white;
     font-family: brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
 		
-		&.gym-button
+		&.cdcp-button
 		{
 			color:white;
 		}
@@ -595,11 +595,11 @@ body.register,
 
 	a:hover
 	{
-		color:$gym-orange;
+		color:$cdcp-blue;
 		border-bottom: none;
 	}
 
-	.gymnasium-logo
+	.cdcp-logo
 	{
 		height:76px;
 		margin-top:-10px;
@@ -618,7 +618,7 @@ body.register,
 
 	.navbar-default
 	{
-		background-color:$gym-dark-grey;
+		background-color:$cdcp-dark-grey;
 		border-color:transparent;
 		border:none;
     margin-bottom:0;
@@ -631,7 +631,7 @@ body.register,
 
 .caret
 {
-	color:$gym-light-grey;
+	color:$cdcp-light-grey;
 }
 
 
@@ -648,7 +648,7 @@ header.global,
 	border:none;
 	width:inherit;
 	height:120px;
-	background-color:$gym-dark-grey;
+	background-color:$cdcp-dark-grey;
 
 	.container, .container.grey
 	{
@@ -672,7 +672,7 @@ header.global,
 		//odd amount of specificity required to get around built in style rules - MB
 		.cta.cta-register
 		{
-			color:$gym-white;
+			color:$cdcp-white;
 			display:inline-block;
 			margin-top:-0.3em;
 
@@ -692,20 +692,20 @@ header.global,
 .content-wrapper#content
 {
 	padding-bottom:1em;
-	background-color:$gym-white;
+	background-color:$cdcp-white;
 }
 
 div.wrapper-footer
 {
   margin-top:0;
-	background-color: $gym-dark-gray;
-	border-top: 10px solid $gym-orange-light;
+	background-color: $cdcp-dark-gray;
+	border-top: 10px solid $cdcp-blue-light;
 	color:white;
 	min-height:170px;
 
 	footer
 	{
-		.gymnasium-logo
+		.cdcp-logo
 		{
 			height:50px;
 			margin-top:15px;
@@ -722,7 +722,7 @@ div.wrapper-footer
 
 			li
 			{
-				border-right:1px solid $gym-medium-grey;
+				border-right:1px solid $cdcp-medium-grey;
 				height:100%;
 				vertical-align: center;
 
@@ -734,7 +734,7 @@ div.wrapper-footer
 				}
 				a:hover
 				{
-					color:$gym-orange;
+					color:$cdcp-blue;
 				}
 			}
 			li:last-child
@@ -747,7 +747,7 @@ div.wrapper-footer
 			margin-top:30px;
 			span
 			{
-				color:$gym-white;
+				color:$cdcp-white;
 			}
 			img
 			{
@@ -776,15 +776,15 @@ section
 	z-index:0;
 }
 
-.gym-top-block
+.cdcp-top-block
 {
 	z-index:1;
 	position:relative;
 }
 
-.gym-top-block
+.cdcp-top-block
 {
-	.gym-nav-icon
+	.cdcp-nav-icon
 	{
 		background-position:center;
 		display:inline-block;
@@ -798,7 +798,7 @@ section
 	}
 }
 
-.gym-button:link, .gym-button:visited
+.cdcp-button:link, .cdcp-button:visited
 {
 	color:white;
 	font-family: brandon-grotesque;
@@ -814,19 +814,19 @@ body
 	button:focus:not(:disabled), 
 	.button:active:not(:disabled), 
 	.button:focus:not(:disabled)
-	.gym-button:focus
+	.cdcp-button:focus
 	{
 		box-shadow:none;
 	}
 }
 
-.gym-button,
-a.gym-button,
-a.gym-button:link,
+.cdcp-button,
+a.cdcp-button,
+a.cdcp-button:link,
 .account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link,
 .xmodule_display.xmodule_CapaModule div.problem .action .save,
 .xmodule_display.xmodule_CapaModule div.problem .action .save:not(:disabled),
-.login .form-actions button[type="submit"], .register .form-actions button[type="submit"].gym-button,
+.login .form-actions button[type="submit"], .register .form-actions button[type="submit"].cdcp-button,
 .courseware-bookmarks-button .bookmarks-list-button,
 {
 	box-shadow:none;
@@ -844,7 +844,7 @@ a.gym-button:link,
 	border: 0;
   border-radius: .125em;
   
-	background-color:$gym-orange;
+	background-color:$cdcp-blue;
 	color:white;
 	font-weight:bold;
 	font-size: 1em;
@@ -871,17 +871,17 @@ a.gym-button:link,
 
 body
 {
-	#secondary-nav a.gym-button:hover,
-	.gym-button:hover,
-	.gym-button:active,
-	.gym-button:active:hover,
-	a.gym-button:hover,
-	a.gym-button:hover,
-	a.gym-button:active,
-	a.gym-button:active:hover,
-	a:visited.gym-button:hover,
-	a:link.gym-button:hover,
-	a:link:visited.gym-button:hover,
+	#secondary-nav a.cdcp-button:hover,
+	.cdcp-button:hover,
+	.cdcp-button:active,
+	.cdcp-button:active:hover,
+	a.cdcp-button:hover,
+	a.cdcp-button:hover,
+	a.cdcp-button:active,
+	a.cdcp-button:active:hover,
+	a:visited.cdcp-button:hover,
+	a:link.cdcp-button:hover,
+	a:link:visited.cdcp-button:hover,
 	input[type="submit"]:hover:not(:disabled),
 	input[type="button"]:hover:not(:disabled),
 	button:hover:not(:disabled),
@@ -889,10 +889,10 @@ body
 	.account-settings-sections .section .account-settings-section-body .u-field .field .u-field-link:hover,
 	.xmodule_display.xmodule_CapaModule div.problem .action .save:hover,
 	.xmodule_display.xmodule_CapaModule div.problem .action .save:hover:not(:disabled),
-	.login .form-actions button[type="submit"], .register .form-actions button[type="submit"].gym-button:hover,
+	.login .form-actions button[type="submit"], .register .form-actions button[type="submit"].cdcp-button:hover,
 	.courseware-bookmarks-button .bookmarks-list-button:hover
 	{
-		background-color:$gym-button-background-hover;
+		background-color:$cdcp-button-background-hover;
 		color:white;
 		background-image:none;
 		box-shadow: none;
@@ -930,36 +930,36 @@ body
 		width:auto;
 	}
 }
-.gym-button:focus,
-.gym-button:active
+.cdcp-button:focus,
+.cdcp-button:active
 {
-	background:$gym-button-background-active;
+	background:$cdcp-button-background-active;
 }
 
-.gym-button b
+.cdcp-button b
 {
 	font: bold 1.2em/1 brandon-grotesque, "Helvetica Neue", Helvetica, sans-serif;
 	letter-spacing: .025em;
 	vertical-align: bottom;
 }
 
-.gym-button.natural
+.cdcp-button.natural
 {
 	width:auto;
 }
 
-.gym-link
+.cdcp-link
 {
 	color: #f89820;
 }
 
-.gym-link:hover
+.cdcp-link:hover
 {
 	border-bottom: 1px solid #f89820;
 }
 
-.gym-link:focus,
-.gym-link:active
+.cdcp-link:focus,
+.cdcp-link:active
 {
 	border-bottom-color: #444;
 }
@@ -1042,7 +1042,7 @@ body
 .dialog ul li,
 .dialog ul li:last-child
 {
-	border-bottom: .15em solid $gym-orange;
+	border-bottom: .15em solid $cdcp-blue;
 	margin-bottom: 1.2em;
 	box-sizing: border-box;
 }
@@ -1130,7 +1130,7 @@ body
 }
 
 
-.gym-icon
+.cdcp-icon
 {
 	width:35px;
 	height:25px;
@@ -1144,7 +1144,7 @@ body
     -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
 }
 
-.gym-icon:hover
+.cdcp-icon:hover
 {
 	filter: none;
     -webkit-filter: grayscale(0);
@@ -1153,14 +1153,14 @@ body
 
 .aquent-icon
 {
-	@extend .gym-icon;
+	@extend .cdcp-icon;
 	background-image:$aquent-icon-image;
 
 }
 
 .vitamin-t-icon
 {
-	@extend .gym-icon;
+	@extend .cdcp-icon;
 	background-image:$vitamin-t-icon-image;
 }
 
@@ -1220,15 +1220,15 @@ code, code *
 {
 	span
 	{
-		color:$gym-white;
+		color:$cdcp-white;
 	}
 	a
 	{
-		color:$gym-orange;
+		color:$cdcp-blue;
 	}
 
 	a:hover, a:link:hover
 	{
-		color:$gym-light-grey;
+		color:$cdcp-light-grey;
 	}
 }

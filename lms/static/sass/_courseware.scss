@@ -51,7 +51,7 @@ body.view-in-course
 		box-shadow:none;
 		border:none;
 		height:auto;
-		background-color:$gym-dark-grey;
+		background-color:$cdcp-dark-grey;
 	}
 
 	.wrapper-preview-menu
@@ -61,7 +61,7 @@ body.view-in-course
 
 	.content-wrapper#content
 	{
-		background-color:$gym-white;
+		background-color:$cdcp-white;
 		padding-bottom:1em;
 	}
 }
@@ -97,7 +97,7 @@ body.view-in-course
 
 		span.label
 		{
-			color: $gym-dark-gray;
+			color: $cdcp-dark-gray;
 		}
 
 		.home-header
@@ -140,7 +140,7 @@ body.view-in-course
 
 #course-title-header
 {
-	background-color:$gym-light-gray;
+	background-color:$cdcp-light-gray;
 
 	div.row
 	{
@@ -195,9 +195,9 @@ nav.progress.wrapper-course-material
 
 	.course-index
 	{
-		color:$gym-white;
+		color:$cdcp-white;
 		border-right:none;
-		background-color:$gym-medium-grey;
+		background-color:$cdcp-medium-grey;
 		border-radius:0;
 		display:block;
 
@@ -209,7 +209,7 @@ nav.progress.wrapper-course-material
 
 		.search-bar .search-field
 		{
-			background:$gym-white;
+			background:$cdcp-white;
 		}
 
 		.accordion
@@ -218,10 +218,10 @@ nav.progress.wrapper-course-material
 
 			nav.course-navigation .group-heading.active .icon.fa
 			{
-				color:$gym-orange;
+				color:$cdcp-blue;
 			}
 
-			background-color:$gym-medium-grey;
+			background-color:$cdcp-medium-grey;
 
 			.course-navigation
 			{
@@ -252,12 +252,12 @@ nav.progress.wrapper-course-material
 
 							&.active a
 							{
-								color: $gym-orange;
+								color: $cdcp-blue;
 							}
 
 							a
 							{
-								color:$gym-white;
+								color:$cdcp-white;
 								border:none;
 							}
 
@@ -281,7 +281,7 @@ nav.progress.wrapper-course-material
 				{
 					.group-heading
 					{
-						color:$gym-white;
+						color:$cdcp-white;
 					}
 				}
 			}
@@ -297,7 +297,7 @@ nav.progress.wrapper-course-material
 				{
 					p
 					{
-						color:$gym-white;
+						color:$cdcp-white;
 					}
 				}
 
@@ -305,14 +305,14 @@ nav.progress.wrapper-course-material
 				li.active a,
 				li.active a p
 				{
-					color:$gym-orange;
+					color:$cdcp-blue;
 					font-weight:bold;
 				}
 			}
 
 			.chapter
 			{
-				color:$gym-white;
+				color:$cdcp-white;
 				background:none;
 				box-shadow:none;
         padding:0;
@@ -328,7 +328,7 @@ nav.progress.wrapper-course-material
           letter-spacing: .04em;
           word-spacing: .04em;
 
-					color:$gym-white;
+					color:$cdcp-white;
 					background:none;
 					box-shadow:none;
 					text-shadow:none;
@@ -364,7 +364,7 @@ nav.progress.wrapper-course-material
 	{
 		font-size:12pt;
 		border-right:1px dashed #ccc;
-    background-color:$gym-light-color;
+    background-color:$cdcp-light-color;
 
 		h1
 		{
@@ -450,17 +450,17 @@ nav.progress.wrapper-course-material
 		border-radius:0;
 		padding:0px 20px;
 		border-left:none;
-    background-color: $gym-light-color;
+    background-color: $cdcp-light-color;
 
 		a
 		{
-			color:$gym-orange;
+			color:$cdcp-blue;
 		}
 
 		a:hover
 		{
 			text-decoration:none;
-			border-bottom:1px solid $gym-orange;
+			border-bottom:1px solid $cdcp-blue;
 		}
 
 		h1
