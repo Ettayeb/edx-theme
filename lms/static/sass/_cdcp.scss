@@ -44,10 +44,10 @@ $cdcp-white: #ebebeb;
 
 $cdcp-textblock-color:rgba(45,45,45,0.70);
 
-$cdcp-button-background-hover:#a6a6a6;
+$cdcp-button-background-hover:white;
 $cdcp-button-background-active:#939393;
 $cdcp-button-background-focus: $cdcp-button-background-active;
-//End Gym theme colors
+//End Cdcp theme colors
 
 //Main Color Variables
 $main-color: #F89720;
@@ -218,7 +218,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../images/marketing-campaign/homepage_graphic.png');
+$homepage-bg-image: url('../images/marketing-campaign/homepage_graphic.jpg');
 
 /* negate a silly style rule inherited from the platform */
 html
@@ -240,7 +240,13 @@ html body button
 	box-shadow:none;
 	text-shadow:none;
 }
-
+.home > header .container {
+	min-height:635px;
+	
+}
+.home .container-fluid:nth-of-type(2n+1) {
+    border-top: 10px solid #19cbcf;
+}
 .content-wrapper .container,
 .container
 {
@@ -279,6 +285,12 @@ div#content.content-wrapper,
     }
   }
 }
+#side-bn {
+	float:right;
+	
+}
+
+
 
 $login-banner-image: none;
 $register-banner-image: none;
@@ -311,8 +323,6 @@ $register-banner-image: none;
 @import 'register';
 @import 'tertiary_navigation';
 @import 'system_status';
-
-@import 'prism'; //used for prism.js syntax highlighting
 
 p
 {
@@ -893,12 +903,12 @@ body
 	.courseware-bookmarks-button .bookmarks-list-button:hover
 	{
 		background-color:$cdcp-button-background-hover;
-		color:white;
+		color:$cdcp-blue !important;
 		background-image:none;
 		box-shadow: none;
 		text-decoration:none;
 		font-weight:bold;
-		border:none;
+		border:1px $cdcp-blue solid;
 		color:white;
 		font-family:brandon-grotesque;
 
@@ -1132,8 +1142,9 @@ body
 
 .cdcp-icon
 {
-	width:35px;
-	height:25px;
+	width:32px;
+	height:32px;
+	margin: -10px;
 	display:inline-block;
 	background-repeat:no-repeat;
 	vertical-align:middle;
@@ -1151,18 +1162,48 @@ body
     background-color:transparent;
 }
 
-.aquent-icon
+.facebook-icon
 {
 	@extend .cdcp-icon;
-	background-image:$aquent-icon-image;
+	background-image:$facebook-icon-image;
+
+}
+.twitter-icon
+{
+	@extend .cdcp-icon;
+	background-image:$twitter-icon-image;
 
 }
 
-.vitamin-t-icon
+.linkedin-icon
 {
 	@extend .cdcp-icon;
-	background-image:$vitamin-t-icon-image;
+	background-image:$linkedin-icon-image;
+
 }
+
+.youtube-icon
+{
+	@extend .cdcp-icon;
+	background-image:$youtube-icon-image;
+
+}
+
+.instagram-icon
+{
+	@extend .cdcp-icon;
+	background-image:$instagram-icon-image;
+
+}
+
+.flickr-icon
+{
+	@extend .cdcp-icon;
+	background-image:$flickr-icon-image;
+
+}
+
+
 
 html
 {
@@ -1230,5 +1271,11 @@ code, code *
 	a:hover, a:link:hover
 	{
 		color:$cdcp-light-grey;
+	}
+}
+
+@media screen and (min-width: 768px) {
+.navbar-nav li {
+    margin-left: 5px;
 	}
 }

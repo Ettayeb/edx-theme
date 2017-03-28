@@ -8,44 +8,25 @@
 
 <%block name="pagetitle">${_("Home")}</%block>
 
-
-<!--
-Start of DoubleClick Floodlight Tag: Please do not remove
-Activity name of this tag: Cdcp HP
-URL of the webpage where the tag is expected to be placed: http://cdcp.aquent.com/
-This tag must be placed between the <body> and </body> tags, as close as possible to the opening tag.
-Creation Date: 12/02/2015
--->
-<script type="text/javascript">
-var axel = Math.random() + "";
-var a = axel * 10000000000000;
-document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5255816;type=count0;cat=cdcpna00;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=' + a + '?" width="1" height="1" frameborder="0" style="display:none"></iframe>');
-</script>
-<noscript>
-<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5255816;type=count0;cat=cdcpna00;dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;ord=1?" width="1" height="1" frameborder="0" style="display:none"></iframe>
-</noscript>
-<!-- End of DoubleClick Floodlight Tag: Please do not remove -->
-
-
 <section class="home">
   <header>
     <div class="container">
       <div class="row">
         <div class="col-xs-12 hidden-md hidden-lg col-sm-8 col-sm-offset-2">
           <hgroup class="header-title header-title-sm">
-            <h1>${_("Join Cdcp")}</h1>
-            <h2 class="tk-brandon-grotesque">${_("Free courses. Practical skills. Unlimited potential.")}</h2>
-            <a class="cdcp-button" href="/courses">Enroll in a Class</a>
+            <h1>${("Rejoindre CDCP Academy")}</h1>
+            <h2 class="tk-brandon-grotesque">${("Cours gratuits. Compétences pratiques. Potentiel illimité.")}</h2>
+            <a class="cdcp-button" href="/courses">S'inscrire au cours</a>
           </hgroup>
         </div>
-        <div class="col-md-9 col-sm-12 marketing-image-container">
+<!--        <div class="col-md-9 col-sm-12 marketing-image-container">
           <a href="/courses"><img src="${static.url('images/marketing-campaign/sit_and_get_fit_2.png')}" class="img-responsive sit-and-get-fit"></a>
         </div>
-        <div class="col-md-3 col-sm-12 hidden-sm hidden-xs">
+-->        <div class="col-md-3 col-sm-12 hidden-sm hidden-xs" id="side-bn">
           <hgroup class="header-title">
-            <h1>${_("Join Cdcp")}</h1>
-            <h2 class="tk-brandon-grotesque">${_("Free courses. Practical skills. Unlimited potential.")}</h2>
-            <a class="cdcp-button" href="/courses">Enroll in a Class</a>
+            <h1>${("Rejoindre CDCP Academy")}</h1>
+            <h2 class="tk-brandon-grotesque">${("Cours gratuits. Compétences pratiques. Potentiel illimité.")}</h2>
+            <a class="cdcp-button" href="/courses">S'inscrire au cours</a>
           </hgroup>
         </div>
       </div>
@@ -55,23 +36,23 @@ document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5
   <section class="container-fluid subsection">
     <div class="container">
       <header class="header-tab text-center">
-        <h1>How Cdcp Works</h1>
+        <h1>Méthodologie de fonctionnement</h1>
       </header>
 
       <section class="row how-cdcp-works">
         <div class="col-md-4 col-sm-12 col-xs-12">
-          <h2>Real World Skills</h2>
-          <p>Cdcp offers free online courses designed to teach creative professionals in-demand skills.  We know these skills are in demand based on what we hear from our clients.</p>
+          <h2>Compétences du monde professionnelles</h2>
+          <p> CDCP Academy vous offre des cours en ligne conçus pour enseigner les professionnels des compétences à la demande. Nos choix de cours depend de la demande de nos clients et au besoin du marché . </p>
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12">
-          <h2>Expert Instruction</h2>
-          <p>Our courses are all self-paced and taught by experienced practitioners with a passion for sharing practical lessons from the design trenches.</p>
+          <h2>Instructions des experts</h2>
+          <p>Nos cours sont tous auto-stimulés et enseignés par des praticiens expérimentés avec une passion pour le partage des leçons pratiques.</p>
         </div>
 
         <div class="col-md-4 col-sm-12 col-xs-12">
-          <h2>Career Opportunities</h2>
-          <p>Once you finish a course, you will be able to use your new skills in your current role, or use them to land a new job. <a href="http://aquent.com/find-work/?utm_source=cdcp&utm_medium=web&utm_campaign=homepagejobs&utm_content=careeropportunities" target="_blank">We can even help with that!</a></p>
+          <h2>Opportunités de carrière</h2>
+          <p>Une fois que vous avez terminé un cours, vous serez en mesure d'utiliser vos nouvelles compétences dans votre rôle actuel, ou les utiliser pour obtenir un nouvel emploi !</p>
         </div>
       </section>
 
@@ -79,7 +60,7 @@ document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5
         <section class="highlighted-courses col-md-12">
 
           <header class="text-center header-tab">
-            <h1>Featured Courses</h1>
+            <h1>Cours à la une</h1>
           </header>
 
           % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
@@ -94,7 +75,7 @@ document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5
               </ul>
               <div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 text-center">
                 <a href="/courses" class="cdcp-button" id="view-all-courses">
-                  <b>View all Courses</b>
+                  <b>Voir tous les cours</b>
                 </a>
               </div>
             </section>
@@ -105,146 +86,30 @@ document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5
     </div>
   </section>
 
-  <section class="container-fluid">
-    <div class="container" id="get-work">
-      <header class="header-tab text-center">
-        <h1>Find Work</h1>
-      </header>
-      <section class="row" >
-        <div class="col-md-12 tagline">
-          <h2 class="text-center">We're also a lead talent agency.</h2>
-          <h2 class="text-center">Find work that best fits your skills, in your area.</h2>
-        </div>
-
-        <div class="3"><br /></div>
-
-        <form method="get" id="find-work-search" class="col-md-8 col-md-offset-2">
-          <div class="field select row" id="field-market">
-            <label class="visuallyhidden" id="choose-location" for="market">Select the Nearest Location</label>
-            <div class="col-md-3 col-md-offset-3">
-              <select id="market" name="market" class="form-control" required="" aria-required="true">
-                    <option disabled="">Select A Location:</option>
-                    <option disabled="">——————</option>
-                  <optgroup label="USA">
-                    <option value="23">Atlanta</option>
-                    <option value="60">Austin</option>
-                    <option value="46">Baltimore</option>
-                    <option value="102">Boise</option>
-                    <option value="10" selected="">Boston</option>
-                    <option value="61">Charlotte</option>
-                    <option value="14">Chicago</option>
-                    <option value="34">Connecticut</option>
-                    <option value="22">Dallas</option>
-                    <option value="27">Denver</option>
-                    <option value="24">Detroit</option>
-                    <option value="826">Houston</option>
-                    <option value="58">Indianapolis</option>
-                    <option value="13">Los Angeles</option>
-                    <option value="33">Miami</option>
-                    <option value="20">Minneapolis</option>
-                    <option value="807">Moline</option>
-                    <option value="30">New Jersey</option>
-                    <option value="11">New York City</option>
-                    <option value="51">Northern Virginia</option>
-                    <option value="32">Ohio</option>
-                    <option value="19">Orange County</option>
-                    <option value="72">Orlando</option>
-                    <option value="18">Philadelphia</option>
-                    <option value="31">Phoenix</option>
-                    <option value="41">Portland, OR</option>
-                    <option value="803">Raleigh/Durham</option>
-                    <option value="73">Rhode Island</option>
-                    <option value="78">Richmond</option>
-                    <option value="16">San Diego</option>
-                    <option value="12">San Francisco</option>
-                    <option value="17">Seattle</option>
-                    <option value="15">Silicon Valley</option>
-                    <option value="37">St. Louis</option>
-                    <option value="68">Tampa</option>
-                    <option value="25">Washington, DC</option>
-                    <option value="881">Wisconsin</option>
-                  </optgroup>
-                    <option disabled="">——————</option>
-                  <optgroup label="Canada">
-                    <option value="40">Toronto</option>
-                    <option value="47">Vancouver</option>
-                  </optgroup>
-                    <option disabled="">——————</option>
-                  <optgroup label="France">
-                    <option value="35">Paris</option>
-                  </optgroup>
-                    <option disabled="">——————</option>
-                  <optgroup label="UK">
-                    <option value="29">London</option>
-                  </optgroup>
-                    <option disabled="">——————</option>
-                  <optgroup label="Netherlands">
-                    <option value="43">Amsterdam</option>
-                  </optgroup>
-                    <option disabled="">——————</option>
-                  <optgroup label="Australia">
-                    <option value="36">Melbourne</option>
-                    <option value="39">Sydney</option>
-                  </optgroup>
-                    <option disabled="">——————</option>
-                  <optgroup label="Japan">
-                    <option value="92">Fukuoka</option>
-                    <option value="79">Nagoya</option>
-                    <option value="64">Osaka</option>
-                    <option value="44">Tokyo</option>
-                  </optgroup>
-              </select>
-            </div>
-            <button class="cdcp-button col-md-2" id="view-jobs-button"><b>View Jobs</b></button>
-          </div>
-
-          <section class="job-board">
-            <div class="text-center viewing-jobs-in">Viewing jobs in <var class="job-location"> <var id="find-jobs-market-name">Boston</var></var>…</div>
-
-            <div class="job-list-container">
-              <ul class="job-list" id="find-jobs-job-list">
-
-              </ul>
-
-              <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                  <a href="http://aquent.com/find-work/?utm_source=cdcp&utm_medium=web&utm_campaign=homepagejobs&utm_content=viewall" class="text-center view-all-jobs">
-                    View all jobs in <var class="job-location"> Boston</var>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-          </section>
-        </form>
-      </section>
-    </div>
-  </section>
-
   % if not user.is_authenticated():
 
   <section class="container-fluid subsection">
     <div class="container" id="join-cdcp">
 
         <header class="header-tab text-center">
-          <h1>Join Us</h1>
+          <h1>Rejoignez-nous</h1>
         </header>
         <section class="text-center">
-          <em><a href="/register">Join Cdcp Now</a></em>
+          <em><a href="/register">Rejoignez CDCP Academy</a></em>
 
           <div class="row">
-            <p class="col-md-8 col-md-offset-2">Register to receive email updates about new and upcoming classes.</p>
+            <p class="col-md-8 col-md-offset-2">Inscrivez-vous pour recevoir des mises à jour concernant les nouveaux cours .</p>
           </div>
 
           <div class="row">
             <div class="col-md-4 col-md-offset-4">
               <a class="cdcp-button " href="/register">
-                ${_("Sign up for an account")}
+                ${("Inscrivez-Vous")}
               </a>
             </div>
           </div>
 
-          <p>or <a href="/login">Sign in</a>
+          <p>ou <a href="/login">Se Connecter</a>
         </section>
     </div>
   </section>
@@ -255,7 +120,7 @@ document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2 class="text-center">As seen in:</h2>
+          <h2 class="text-center">Nos partenaires:</h2>
         </div>
       </div>
 
@@ -289,32 +154,3 @@ document.write('<iframe src="https://5255816.fls.doubleclick.net/activityi;src=5
     </div>
   </section>
 </section>
-
-
-<%block name="js_extra">
-   <script type="text/javascript">
-      $(window).on('load',function() {
-         if(getParameterByName('next')) {
-              $('#login').trigger("click");
-         }
-
-         Cdcp.injectFBTrackingPixel();
-
-         //load jobs into the jobs page
-         Cdcp.LoadJobsForMarket();
-
-         $('#view-jobs-button').click(function(event){
-           event.preventDefault();
-           var market = $('#market').val();
-           var market_label = $('#market option:selected').text();
-
-           Cdcp.LoadJobsForMarket(market);
-           $('#find-jobs-market-name, .job-location').text(market_label);
-
-
-         });
-      })
-   </script>
-
-
-</%block>
