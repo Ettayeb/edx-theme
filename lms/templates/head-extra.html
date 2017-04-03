@@ -11,11 +11,6 @@ from django.conf import settings
 <meta property="og:description" content="At CDCP-ACADEMY, we offer free online courses focused on HTML and CSS, responsive design, UX design, and an array of front-end development tools." />
 <meta property="og:keywords" content="online courses" />
 
-
-<!-- insert typekit font references -->
-<script src="//use.typekit.net/rhf0qta.js"></script>
-<script>try{Typekit.load();}catch(e){}</script>
-
 <!-- bootstrap! -->
 <!-- local reference for offline testing only -->
 <!-- <link rel="stylesheet" href="${static.url('css/bootstrap.css')}" > -->
@@ -24,7 +19,7 @@ from django.conf import settings
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.css">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.js"></script>
-
+<script src="${static.url('js/cdcp.js')}"></script>
 
 <script>
   // check for unsupported browsers; display warning message if an old browser

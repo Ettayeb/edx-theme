@@ -218,7 +218,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../images/marketing-campaign/homepage_graphic.jpg');
+$homepage-bg-image: url('../images/marketing-campaign/homepage_graphic.png');
 
 /* negate a silly style rule inherited from the platform */
 html
@@ -611,8 +611,8 @@ body.register,
 
 	.cdcp-logo
 	{
-		height:76px;
-		margin-top:-10px;
+		//height:76px;
+		//margin-top:-10px;
     margin-left:5px;
 	}
 
