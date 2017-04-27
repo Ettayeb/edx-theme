@@ -112,7 +112,6 @@
   {
     p
     {
-      font-size: 1.3em;
       line-height: 1.4em;
     }
   }
@@ -260,7 +259,7 @@
 	.container-fluid
 	{
 		padding-bottom:4em;
-
+		font-size: 16px;
 		h1
 		{
 			text-transform:uppercase;
@@ -497,7 +496,7 @@
 		{
 
       margin-bottom:1.5em;
-
+      z-index:20;
 			h2
 			{
 				color:$cdcp-medium-grey;

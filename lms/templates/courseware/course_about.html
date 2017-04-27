@@ -111,22 +111,13 @@ from edxmako.shortcuts import marketing_link
     </section>
     <div class="course-metabar row">
       <div class="meta level col-md-5">
-        <span>
-          <strong>
-            % if course.display_number_with_default and course.display_number_with_default.startswith("0"):
-              ${_("Gym Short")}
-            % else:
-              ${_("Full Course")}
-            % endif
-          </strong>
-        </span>
       </div>
       <div class="action col-md-2">
         <span class="text-center">
           %if user.is_authenticated() and registered:
             %if show_courseware_link:
               <a href="${course_target}" class="cdcp-button get-started text-center">
-                <b>${_("Go to Class")}</b>
+                <b>${(u"Accéder au cours")}</b>
               </a>
             %endif
           % elif invitation_only and not can_enroll:
@@ -135,10 +126,12 @@ from edxmako.shortcuts import marketing_link
           ## because AnonymousUsers cause can_enroll for shib courses to be False, but we need them to be able to click
           ## so that they can register and become a real user that can enroll.
           % elif not is_shib_course and not can_enroll:
-            <span class="register disabled">${_("Enrollment is Closed")}</span>
+	   <a href="#" class="cdcp-button register disabled">
+            <b>${_(u"L'inscription est fermée")}</b>
+	    </a>
           %else:
             <a href="#" class="cdcp-button register">
-              <b>${_("Get Started")}</b>
+              <b>${("S'enregistrer")}</b>
             </a>
             <div id="register_error"></div>
           %endif
